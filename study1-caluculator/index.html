@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<script type="application/javascript">
+    $(document).on('click', '#submit', calculate);
+
+    function calculate() {
+        var a = $("#calculator input[name='a']")[0].value;
+        var b = $("#calculator input[name='n']")[0].value;
+        var operator = $("#calculator input[name='operator']")[0].value;
+        $("#answer").text(0)
+    }
+
+</script>
+<form id="calculator">
+    <input type="number" name ="a">
+    <input type="text" name ="operator">
+    <input type="number" name ="b">
+    <input type="button" id="submit" value="submit">
+</form>
+<div id ="answer"></div>
+</body>
