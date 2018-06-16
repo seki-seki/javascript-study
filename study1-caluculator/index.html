@@ -9,9 +9,13 @@
 
     function calculate() {
         var a = $("#calculator input[name='a']")[0].value;
-        var b = $("#calculator input[name='n']")[0].value;
+        var b = $("#calculator input[name='b']")[0].value;
         var operator = $("#calculator input[name='operator']")[0].value;
         $("#answer").text(0)
+    }
+
+    function add(a,b) {
+        return a + b;
     }
 
 </script>
